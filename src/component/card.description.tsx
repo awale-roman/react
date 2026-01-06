@@ -1,9 +1,17 @@
-function CardDescription() {
+interface IProductNameProps {
+  productName: string;
+  children?: string;
+}
+
+function CardDescription({
+  productName,
+  children,
+}: Readonly<IProductNameProps>) {
   return (
     <div className="text-center">
-      <p>Frontend Developer</p>
-      <p>28 years</p>
-      <p>Bachelor Degree</p>
+      <p>{productName}</p>
+
+      <p>{children}</p>
     </div>
   );
 }
