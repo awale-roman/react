@@ -1,5 +1,7 @@
 import { Button, Input } from "antd";
 
+import { NavLink } from "react-router";
+
 const RegisterRightPanel = () => {
   return (
     <>
@@ -10,27 +12,31 @@ const RegisterRightPanel = () => {
           <Input placeholder="Enter your username" />
         </div>
         <div>
+          <label htmlFor="email">Email:</label>
+          <Input placeholder="Enter your email" />
+        </div>
+        <div>
           <label htmlFor="password">Password:</label>
           <Input placeholder="Enter your password" />
         </div>
         <div className="flex italic gap-4 flex-col lg:justify-between lg:flex-row">
           <p>
-            By loggin in, you aggree with our{" "}
+            By signing up, you aggree with our{" "}
             <span>
-              <a href="*" className="underline offset-2 text-green-400">
+              <NavLink to="*" className="underline offset-2 text-green-400">
                 terms and condition
-              </a>
+              </NavLink>
             </span>
           </p>
-          <a href="*" className="underline offset-2 text-green-400">
+          <NavLink to="*" className="underline offset-2 text-green-400">
             Forgot password?
-          </a>
+          </NavLink>
         </div>
         <Button type="primary" htmlType="submit" className="w-min">
           Create New Account
         </Button>
         <p>Or</p>
-        <a href="/">Sign In</a>
+        <NavLink to="/">Sign In</NavLink>
       </div>
     </>
   );

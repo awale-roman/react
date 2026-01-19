@@ -1,5 +1,7 @@
 import { Button, Input } from "antd";
 
+import { NavLink } from "react-router";
+
 const LoginRightPanel = () => {
   return (
     <>
@@ -17,21 +19,27 @@ const LoginRightPanel = () => {
           <p>
             By loggin in, you aggree with our{" "}
             <span>
-              <a href="*" className="underline offset-2 text-green-400">
+              <NavLink
+                to="/termandcondition"
+                className="underline offset-2 text-green-400"
+              >
                 terms and condition
-              </a>
+              </NavLink>
             </span>
           </p>
-          <a href="*" className="underline offset-2 text-green-400">
+          <NavLink
+            to="/forgotpassword"
+            className="underline offset-2 text-green-400"
+          >
             Forgot password?
-          </a>
+          </NavLink>
         </div>
         <Button type="primary" htmlType="submit" className="w-min">
           Log In
         </Button>
         <p>Or</p>
 
-        <a href="register">Sign Up</a>
+        <NavLink to="/register">Sign Up</NavLink>
       </div>
     </>
   );
