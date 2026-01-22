@@ -8,11 +8,13 @@ function CardDescription({
   children,
 }: Readonly<IProductNameProps>) {
   return (
-    <div className="text-center">
-      <p>{productName}</p>
+    <>
+      <div className="text-center">
+        <p>{productName}</p>
 
-      <p>{children}</p>
-    </div>
+        <p>{children}</p>
+      </div>
+    </>
   );
 }
 

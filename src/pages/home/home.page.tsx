@@ -1,16 +1,9 @@
-import LoginLeftPanel from "../../component/auth/login.left.panel";
-import LoginRightPanel from "../../component/auth/login.right.panel";
+import AuthLayout from "../layout/auth.layout";
 
 const HomePage = () => {
   return (
     <>
-      <div className="h-screen flex gap-2 p-2.5">
-        <LoginLeftPanel />
-
-        <div className="login-right w-full  flex flex-col justify-center p-4 lg:w-[50%]">
-          <LoginRightPanel />
-        </div>
-      </div>
+      <AuthLayout />
     </>
   );
 };
