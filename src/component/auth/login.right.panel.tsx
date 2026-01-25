@@ -14,7 +14,7 @@ const LoginRightPanel = () => {
         <label htmlFor="password">Password:</label>
         <Input placeholder="Enter your password" />
       </div>
-      <div className="flex italic gap-4 flex-col lg:justify-between lg:flex-row">
+      <div className="flex italic gap-4 flex-col-reverse xl:justify-between xl:flex-row">
         <p>
           By loggin in, you aggree with our{" "}
           <span>
