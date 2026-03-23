@@ -2,6 +2,7 @@ import AdminHeader from "../../component/header/admin-header";
 import AdminSidebar from "../../component/sidebar/admin-sidebar";
 import { Content } from "antd/es/layout/layout";
 import { Layout } from "antd";
+import { Outlet } from "react-router";
 import { useState } from "react";
 
 const AdminLayout = () => {
@@ -25,7 +26,7 @@ const AdminLayout = () => {
               minHeight: 280,
             }}
           >
-            <Layout />
+            <Outlet />
           </Content>
         </Layout>
       </Layout>

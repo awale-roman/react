@@ -35,27 +35,27 @@ const router = createBrowserRouter([
   {
     path: "/admin-layout",
     element: <AdminLayout />,
-    children: [
-      {
-        index: true,
-        element: <AdminLayout />,
-      },
-      {
-        path: "/admin-dashboard",
+    // children: [
+    //   {
+    //     index: true,
+    //     element: <AdminLayout />,
+    //   },
+    //   {
+    //     path: "/admin-dashboard",
 
-        // element: <AdminDashboard />,
-      },
-      {
-        path: "/admin-banner",
+    //     // element: <AdminDashboard />,
+    //   },
+    //   {
+    //     path: "/admin-banner",
 
-        // element: <AdminLayout />,
-      },
-      {
-        path: "/admin-brands",
+    //     // element: <AdminLayout />,
+    //   },
+    //   {
+    //     path: "/admin-brands",
 
-        // element: <AdminLayout />,
-      },
-    ],
+    //     // element: <AdminLayout />,
+    //   },
+    // ],
   },
   {
     path: "/product/:slug",
