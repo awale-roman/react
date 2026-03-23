@@ -1,11 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router";
 
+import LoginRightPanel from "../component/auth/login.right.panel";
+import CommingSoon from "../component/comming-soon/comming-soon.component";
+import NotFoundComponent from "../component/error/not.found.component";
+import ForgetPassword from "../pages/forget-password";
 import AdminLayout from "../pages/layout/admin-layout";
 import AuthLayout from "../pages/layout/auth.layout";
-import CommingSoon from "../component/comming-soon/comming-soon.component";
-import ForgetPassword from "../pages/forget-password";
-import LoginRightPanel from "../component/auth/login.right.panel";
-import NotFoundComponent from "../component/error/not.found.component";
 import Register from "../pages/register";
 
 const router = createBrowserRouter([
